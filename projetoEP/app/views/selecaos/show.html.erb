@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Pais:</b>
+  <%= @selecao.Pais %>
+</p>
+
+<p>
+  <b>Pontos:</b>
+  <%= @selecao.Pontos %>
+</p>
+
+<p>
+  <b>Vitorias:</b>
+  <%= @selecao.Vitorias %>
+</p>
+
+<p>
+  <b>Derrotas:</b>
+  <%= @selecao.Derrotas %>
+</p>
+
+<p>
+  <b>Empates:</b>
+  <%= @selecao.Empates %>
+</p>
+
+<p>
+  <b>Numero de gols:</b>
+  <%= @selecao.Numero_de_gols %>
+</p>
+
+<p>
+  <b>Grupo:</b>
+  <%= @selecao.Grupo %>
+</p>
+
+<p>
+  <b>Fase de eliminacao:</b>
+  <%= @selecao.Fase_de_eliminacao %>
+</p>
+
+
+<%= link_to 'Edit', edit_selecao_path(@selecao) %> |
+<%= link_to 'Back', selecaos_path %>

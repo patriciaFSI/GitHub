@@ -1,0 +1,29 @@
+<%= form_for(@juiz) do |f| %>
+  <% if @juiz.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@juiz.errors.count, "error") %> prohibited this juiz from being saved:</h2>
+
+      <ul>
+      <% @juiz.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nome %><br />
+    <%= f.text_field :Nome %>
+  </div>
+  <div class="field">
+    <%= f.label :Idade %><br />
+    <%= f.number_field :Idade %>
+  </div>
+  <div class="field">
+    <%= f.label :Nacionalidade %><br />
+    <%= f.text_field :Nacionalidade %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

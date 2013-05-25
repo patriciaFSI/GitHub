@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Nome: MyString
+  Estado: MyString
+  Sigla: MyString
+  Codigo_de_area: 1
+
+two:
+  Nome: MyString
+  Estado: MyString
+  Sigla: MyString
+  Codigo_de_area: 1

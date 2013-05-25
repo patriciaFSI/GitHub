@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Pais: MyString
+  Pontos: 1
+  Vitorias: 1
+  Derrotas: 1
+  Empates: 1
+  Numero_de_gols: 1
+  Grupo: 1
+  Fase_de_eliminacao: 1
+
+two:
+  Pais: MyString
+  Pontos: 1
+  Vitorias: 1
+  Derrotas: 1
+  Empates: 1
+  Numero_de_gols: 1
+  Grupo: 1
+  Fase_de_eliminacao: 1

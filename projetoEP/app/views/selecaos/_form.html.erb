@@ -1,0 +1,49 @@
+<%= form_for(@selecao) do |f| %>
+  <% if @selecao.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@selecao.errors.count, "error") %> prohibited this selecao from being saved:</h2>
+
+      <ul>
+      <% @selecao.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Pais %><br />
+    <%= f.text_field :Pais %>
+  </div>
+  <div class="field">
+    <%= f.label :Pontos %><br />
+    <%= f.number_field :Pontos %>
+  </div>
+  <div class="field">
+    <%= f.label :Vitorias %><br />
+    <%= f.number_field :Vitorias %>
+  </div>
+  <div class="field">
+    <%= f.label :Derrotas %><br />
+    <%= f.number_field :Derrotas %>
+  </div>
+  <div class="field">
+    <%= f.label :Empates %><br />
+    <%= f.number_field :Empates %>
+  </div>
+  <div class="field">
+    <%= f.label :Numero_de_gols %><br />
+    <%= f.number_field :Numero_de_gols %>
+  </div>
+  <div class="field">
+    <%= f.label :Grupo %><br />
+    <%= f.number_field :Grupo %>
+  </div>
+  <div class="field">
+    <%= f.label :Fase_de_eliminacao %><br />
+    <%= f.number_field :Fase_de_eliminacao %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,27 @@
+<h1>Listing juizs</h1>
+
+<table>
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>Nacionalidade</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @juizs.each do |juiz| %>
+  <tr>
+    <td><%= juiz.Nome %></td>
+    <td><%= juiz.Idade %></td>
+    <td><%= juiz.Nacionalidade %></td>
+    <td><%= link_to 'Show', juiz %></td>
+    <td><%= link_to 'Edit', edit_juiz_path(juiz) %></td>
+    <td><%= link_to 'Destroy', juiz, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Juiz', new_juiz_path %>

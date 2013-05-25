@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nome:</b>
+  <%= @juiz.Nome %>
+</p>
+
+<p>
+  <b>Idade:</b>
+  <%= @juiz.Idade %>
+</p>
+
+<p>
+  <b>Nacionalidade:</b>
+  <%= @juiz.Nacionalidade %>
+</p>
+
+
+<%= link_to 'Edit', edit_juiz_path(@juiz) %> |
+<%= link_to 'Back', juizs_path %>

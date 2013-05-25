@@ -1,0 +1,37 @@
+<h1>Listing selecaos</h1>
+
+<table>
+  <tr>
+    <th>Pais</th>
+    <th>Pontos</th>
+    <th>Vitorias</th>
+    <th>Derrotas</th>
+    <th>Empates</th>
+    <th>Numero de gols</th>
+    <th>Grupo</th>
+    <th>Fase de eliminacao</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @selecaos.each do |selecao| %>
+  <tr>
+    <td><%= selecao.Pais %></td>
+    <td><%= selecao.Pontos %></td>
+    <td><%= selecao.Vitorias %></td>
+    <td><%= selecao.Derrotas %></td>
+    <td><%= selecao.Empates %></td>
+    <td><%= selecao.Numero_de_gols %></td>
+    <td><%= selecao.Grupo %></td>
+    <td><%= selecao.Fase_de_eliminacao %></td>
+    <td><%= link_to 'Show', selecao %></td>
+    <td><%= link_to 'Edit', edit_selecao_path(selecao) %></td>
+    <td><%= link_to 'Destroy', selecao, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Selecao', new_selecao_path %>

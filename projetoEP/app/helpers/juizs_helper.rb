@@ -1,0 +1,2 @@
+module JuizsHelper
+end
